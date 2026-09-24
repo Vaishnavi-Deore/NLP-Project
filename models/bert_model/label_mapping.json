@@ -1,0 +1,24 @@
+{
+  "label2id": {
+    "AQI Information": 0,
+    "Health Effects": 1,
+    "Masks and Protection": 2,
+    "Outdoor Activities": 3,
+    "Pollution Exposure": 4,
+    "Precautions": 5,
+    "Respiratory Health": 6,
+    "Symptoms": 7,
+    "Vulnerable Groups": 8
+  },
+  "id2label": {
+    "0": "AQI Information",
+    "1": "Health Effects",
+    "2": "Masks and Protection",
+    "3": "Outdoor Activities",
+    "4": "Pollution Exposure",
+    "5": "Precautions",
+    "6": "Respiratory Health",
+    "7": "Symptoms",
+    "8": "Vulnerable Groups"
+  }
+}

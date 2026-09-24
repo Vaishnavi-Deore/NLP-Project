@@ -1,0 +1,191 @@
+/* AQI-Sense Modern AI Analytics Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+code, pre, .mono {
+    font-family: 'JetBrains Mono', monospace !important;
+}
+
+/* Metric KPI Card */
+.kpi-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 20px 22px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.kpi-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3B82F6, #10B981);
+}
+
+.kpi-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94A3B8;
+    margin-bottom: 6px;
+}
+
+.kpi-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #F8FAFC;
+    line-height: 1.1;
+}
+
+.kpi-subtext {
+    font-size: 0.8rem;
+    color: #64748B;
+    margin-top: 6px;
+}
+
+/* Prediction Result Card */
+.result-card {
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 1px solid rgba(99, 102, 241, 0.25);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 16px 0;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+/* Category Badges */
+.badge-category {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.badge-aqi-info { background: linear-gradient(135deg, #2563EB, #3B82F6); }
+.badge-health-effects { background: linear-gradient(135deg, #DC2626, #EF4444); }
+.badge-symptoms { background: linear-gradient(135deg, #D97706, #F59E0B); }
+.badge-precautions { background: linear-gradient(135deg, #059669, #10B981); }
+.badge-masks { background: linear-gradient(135deg, #7C3AED, #8B5CF6); }
+.badge-outdoor { background: linear-gradient(135deg, #DB2777, #EC4899); }
+.badge-vulnerable { background: linear-gradient(135deg, #0891B2, #06B6D4); }
+.badge-respiratory { background: linear-gradient(135deg, #EA580C, #F97316); }
+.badge-exposure { background: linear-gradient(135deg, #4F46E5, #6366F1); }
+
+/* Quick Suggestion Pills */
+.suggestion-pill {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #CBD5E1;
+    margin: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.suggestion-pill:hover {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: #3B82F6;
+    color: #FFFFFF;
+}
+
+/* Feature Tag */
+.feature-tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    color: #C7D2FE;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 3px;
+}
+
+/* Pipeline Step Box */
+.pipeline-step {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+}
+
+.pipeline-step-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #94A3B8;
+    margin-bottom: 4px;
+}
+
+.pipeline-step-content {
+    font-size: 0.9rem;
+    color: #E2E8F0;
+}
+
+/* Medical Disclaimer Banner */
+.disclaimer-banner {
+    background: rgba(245, 158, 11, 0.08);
+    border-left: 4px solid #F59E0B;
+    border-radius: 0 10px 10px 0;
+    padding: 14px 18px;
+    margin: 20px 0 10px 0;
+    font-size: 0.82rem;
+    color: #FDE68A;
+    line-height: 1.5;
+}
+
+/* System Status Dot */
+.status-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    color: #94A3B8;
+    padding: 4px 0;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #10B981;
+    box-shadow: 0 0 8px #10B981;
+    display: inline-block;
+}
+
+/* AQI Simulator Meter Card */
+.aqi-gauge-card {
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    border: 2px solid;
+    transition: all 0.3s ease;
+}
