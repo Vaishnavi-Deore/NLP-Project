@@ -255,20 +255,9 @@ NLP Project/
     └── style.css              # Custom AI analytics design stylesheet
 ```
 
----
 
-## 🎓 Presentation & Demonstration Walkthrough
 
-For academic project demonstrations:
 
-1. **Start on Dashboard:** Show the live KPI cards and ask one of the preset questions (e.g. *"Can I exercise outside when AQI is 180?"*).
-2. **Move to Query Analyzer:**
-   - Demonstrate how the system normalizes `AQI 180` and `exercise`.
-   - Point out the step-by-step preprocessing diagnostics in the **NLP Pipeline Diagnostics** tab.
-   - Highlight the **Explainability** chart showing which specific words shifted the classifier weights.
-   - Review the **Advisory Guidance** tab and the explicit non-medical disclaimer.
-3. **Showcase AQI Simulator:**
-   - Move sliders to simulate an emergency smog event (AQI > 250).
    - Observe the dynamic gauge update and the change in outdoor activity recommendations.
 4. **Demonstrate Model Analytics:**
    - Present the real 9x9 Confusion Matrix and per-class Precision/Recall metrics.
