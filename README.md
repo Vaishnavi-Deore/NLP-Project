@@ -258,9 +258,4 @@ NLP Project/
 
 
 
-   - Observe the dynamic gauge update and the change in outdoor activity recommendations.
-4. **Demonstrate Model Analytics:**
-   - Present the real 9x9 Confusion Matrix and per-class Precision/Recall metrics.
-   - Explain the trade-offs between Logistic Regression, Linear SVM, and Deep Self-Attention.
-5. **Showcase Query History:**
-   - Show how the previous query was instantly logged to SQLite with timestamp and top predictions.
+  
