@@ -1,6 +1,6 @@
 # AQI-Sense — AQI Health Query Classifier
 
-**Project Title:**  
+**Project Title:**
 *AQI Health Query Classifier: An NLP-Based System for Classifying Air Quality and Health-Related Queries*
 
 [![Python](https://img.shields.io/badge/Python-3.11%20%7C%203.12%20%7C%203.13-blue.svg)](https://www.python.org/)
